@@ -1,0 +1,29 @@
+import React, {useContext, useEffect} from 'react';
+import { AuthContext } from '../context/Auth';
+import {Button, Form, FormControl, Nav, Navbar, NavDropdown, Container} from "react-bootstrap";
+
+function Header(){
+    const {UserInfo, setUserInfo} = useContext(AuthContext);
+   
+    return (
+       <div className="main-nav_wrap">
+            <Navbar className="main-nav" bg="dark" variant="dark">
+                <Container className="main-nav_container">
+                    <Navbar.Brand className="main-nav_brand">Navbar with text</Navbar.Brand>
+                    <Navbar.Toggle />
+                    <Navbar.Collapse className="justify-content-end">
+                        <Nav>
+                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="/Login">Login</Nav.Link>
+                            <Navbar.Text>
+                                || {UserInfo.name} 님.
+                            </Navbar.Text>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </div>
+    )
+}
+
+export default Header;

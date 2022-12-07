@@ -1,0 +1,47 @@
+/* @src/components/Navbar/Navbar.module.css */
+
+.navbar {
+    @apply bg-gray-100;
+}
+
+.navbody_PC {
+    @apply max-w-5xl mx-auto px-4 flex justify-between;
+}
+
+.navItem {
+    @apply flex space-x-4;
+} 
+
+.navItemList {
+    /* @apply hidden md:flex items-center space-x-1; */
+    @apply hidden md:flex items-center space-x-1 block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700
+    font-bold
+}
+
+.navItemLink {
+    @apply py-5 px-3 text-gray-700 hover:text-gray-900;
+}
+
+.navItemAuth {
+    @apply hidden md:flex items-center space-x-1;
+}
+
+.navItemLogin {
+@apply py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300;
+}
+
+.navItems {
+@apply flex flex-row self-end h-12;
+}
+
+/* .navItem {
+@apply text-gray-400 hover:text-gray-700 cursor-pointer font-medium tracking-wide text-sm flex items-start justify-center;
+} */
+
+.selectedNavItem {
+@apply text-gray-700 border-gray-700 bg-gradient-to-b from-white to-gray-100;
+}
+
+.actions {
+@apply bg-white hover:bg-gray-50 border-2 border-gray-900 text-sm text-gray-900 py-3 px-5 rounded-lg font-medium tracking-wide leading-none;
+}

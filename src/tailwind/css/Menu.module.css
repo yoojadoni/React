@@ -1,0 +1,13 @@
+/* @src/tailwind/css/Menu.module.css */
+
+.menuBox{
+    @apply p-8 bg-amber-300;
+}
+
+.menuGrid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8
+}
+
+.menuGridItem{
+    @apply p-4 bg-cyan-400 rounded-md flex items-center justify-center
+}

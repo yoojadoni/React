@@ -1,0 +1,110 @@
+
+.main-nav_wrap {
+  position: relative;
+  border-bottom: solid 2px aqua; 
+  
+}
+.main-nav_wrap .main-nav .main-nav_container .main-nav_collapse{
+  
+}
+
+.menu-list {
+  margin-top: 30px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 90%;
+  height: 100%;
+}
+
+.menu-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  
+} 
+
+.menu-list li {
+  margin-left: 50px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+ 
+}
+
+.menu-img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  width: 50%;
+  height: 50%;
+}
+
+.order-main {
+  border-top: 0.1;
+  border-top-color: aqua;
+  border-top-style: solid;
+}
+
+/* 주문 총 금액 및 수량 START */
+.order-total{
+  width: 100%;
+  display: block;
+  float:right;
+  list-style: none;
+  margin-top: 1.2%;
+  margin-right: 2%;
+}
+
+.order-total_count{
+  float: right;
+  width: 100%;
+}
+
+.order-total_title{
+  float: left;
+  width: 86%;
+  text-align: right;
+}
+
+.order-total_content{
+  float: left;
+  width: 7%;
+  text-align: right;
+  margin-left: 2%;
+}
+
+.order-total_price{
+  float: right;
+  width: 100%;
+}
+/* 주문 총 금액 및 수량 END */
+
+.order-list {
+  margin-top: 50px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 0.1;
+  border-top-color: aqua;
+  border-top-style: solid;
+  border-bottom: 0.1;
+  border-bottom-color: aqua;
+  border-bottom-style: solid;
+}
+
+.order-list ul {
+  display: flex;
+}
+
+.order-list li {
+  margin-left: 50px;
+  margin-right: 1rem;
+  list-style: none;
+}
+
+.profile-img {
+  width: 50%;
+  height: 50%;
+}

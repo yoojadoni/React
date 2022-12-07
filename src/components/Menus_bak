@@ -1,0 +1,52 @@
+import React, { Component } from 'react';
+
+class Menus extends Component{
+    constructor(props){
+        super(props);
+    }
+    imageClick = (menu) => {
+        
+    }
+    render(){
+        
+        const menuList = this.props.data;
+        const ORDER_TYPE = this.props.ORDER_TYPE;
+        const dispatch = this.props.dispatch;
+
+        const initOrder = {
+            order : 0,
+            price : 0,
+            ordersDetail : []
+        };
+       
+        return(
+                <div className="menu-list">
+                    <ul>
+                        {menuList.map((menu) =>
+                            <li key={menu.id}>
+                                <img
+                                    style={{cursor:'pointer'}}
+                                    alt={menu.menuname}
+                                    onClick={() => {
+                                        dispatch({type: ORDER_TYPE.order, payload:{                
+                                            menu
+                                        }});
+                                        // setOrder(menu);
+                                    }} 
+                                    className='menu-img' 
+                                    src={menu.imageurl} 
+                                    width='200' 
+                                    height='200'
+                                />                                
+                                <span>{menu.menuname}</span>
+                                <h4>가격 : {menu.price}</h4>
+                                {menu.option === 'null' ? <h3></h3> : <h4> {menu.option}</h4>}
+                            </li>
+                        )}
+                    </ul>
+                </div>
+        )
+    }
+}
+
+export default Menus;

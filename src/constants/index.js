@@ -1,0 +1,13 @@
+export const API_BASE_URL = 'http://localhost:8080';
+export const ACCESS_TOKEN = 'accessToken';
+export const REFRESH_TOKEN = 'refreshToken';
+
+export const OAUTH2_REDIRECT_URI = 'http://localhost:3000/oauth2/loginSuccess';
+
+export const Authorization_URI = '/oauth2/authorization';
+
+export const GOOGLE_AUTH_URL = API_BASE_URL + '/oauth2/authorize/google?redirect_uri=' + OAUTH2_REDIRECT_URI;
+export const FACEBOOK_AUTH_URL = API_BASE_URL + '/oauth2/authorize/facebook?redirect_uri=' + OAUTH2_REDIRECT_URI;
+export const GITHUB_AUTH_URL = API_BASE_URL + '/oauth2/authorize/github?redirect_uri=' + OAUTH2_REDIRECT_URI;
+export const KAKAO_AUTH_URL = API_BASE_URL + Authorization_URI + '/kakao?redirect_uri=' + OAUTH2_REDIRECT_URI;
+export const NAVER_AUTH_URL = API_BASE_URL + '/oauth2/authorize/naver?redirect_uri=' + OAUTH2_REDIRECT_URI;
